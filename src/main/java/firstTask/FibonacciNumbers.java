@@ -17,10 +17,10 @@ public class FibonacciNumbers {
         if (index < 0 || index > 92) {
             throw new IndexOutOfBoundsException(index);
         }
-        var n0 = 0L;
-        var n1 = 1L;
+        long n0 = 0L;
+        long n1 = 1L;
         for (int i = 2; i <= index; i++) {
-            var n2 = n0 + n1;
+            long n2 = n0 + n1;
             n0 = n1;
             n1 = n2;
         }
@@ -32,7 +32,7 @@ public class FibonacciNumbers {
         System.out.println("Enter the ordinal Fibonacci number, no more than 92");
 
         int sc = scanner.nextInt();
-        var fibonacci = new FibonacciNumbers();
+        FibonacciNumbers fibonacci = new FibonacciNumbers();
         System.out.println(fibonacci.getFibonacciByIndex(sc));
     }
 
